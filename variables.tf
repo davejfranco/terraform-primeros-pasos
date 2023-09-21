@@ -1,13 +1,25 @@
+variable "region" {
+  type        = string
+  description = "AWS region"
+  default     = "us-east-1"
+}
+
 variable "server_type" {
   type        = string
   description = "Instance type"
   default     = "t3.micro"
 }
 
-variable "server_count" {
+variable "public_server_count" {
   type        = number
-  description = "Instance name"
+  description = "Instance count"
   default     = 1
+}
+
+variable "private_server_count" {
+  type        = number
+  description = "Instance count"
+  default     = 3
 }
 
 variable "create_igw" {
