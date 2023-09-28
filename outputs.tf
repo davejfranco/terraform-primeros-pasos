@@ -1,4 +1,4 @@
-output "region" {
+/*output "region" {
   value = data.aws_region.current.name
 }
 
@@ -18,3 +18,4 @@ output "server_public_ip" {
 output "endpoint" {
   value = aws_lb.youtube.dns_name
 }
+*/
